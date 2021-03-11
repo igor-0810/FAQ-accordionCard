@@ -1,0 +1,58 @@
+$theme-colors: (
+  "soft-violet": rgb(175, 103, 233),
+  "soft-blue": rgb(101, 101, 231),
+  "soft-red": rgb(244, 124, 87),
+  "very-dark-blue": rgb(74, 75, 94),
+  "desaturated-blue": rgb(29, 30, 53),
+  "dark-blue": rgb(120, 120, 135),
+  "light-blue": rgb(231, 231, 233),
+);
+$soft-violet: rgb(175, 103, 233);
+$soft-blue: rgb(101, 101, 231);
+$soft-red:rgb(244, 124, 87);
+$very-dark-blue: rgb(74, 75, 94);
+$desaturated-blue: rgb(29, 30, 53);
+$dark-blue: rgb(120, 120, 135);
+$light-blue: rgb(231, 231, 233);
+
+
+// :root{
+// --bs-gradient: linear-gradient(soft-violet, soft-blue);
+
+// }
+
+.app {
+  background: linear-gradient($soft-violet, $soft-blue);
+
+  .white-box {
+    width: 800px;
+    height: 450px;
+  }
+
+  .ilustration-image {
+    width: 400px;
+    margin-top: 10%;
+    z-index: 2;
+  }
+  .animated-box {
+    left: -90px;
+    top: 140px;
+    z-index: 3;
+  }
+  .image-shadow {
+    top: -10%;
+    left: -10%;
+  }
+
+  .right-container {
+    p {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    .accordions>p:hover{
+        color: $soft-red;
+    }   
+  }
+}
+
+@import "~bootstrap/scss/bootstrap";
